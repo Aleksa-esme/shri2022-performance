@@ -1,5 +1,9 @@
 
-Array.from(document.querySelectorAll('.main__devices')).forEach(makeTabs);
+
+
+let mainDevices = document.querySelector('.main__devices');
+
+mainDevices.addEventListener('click', makeTabs)
 
 function makeTabs(node) {
     let selected = node.querySelector('.section__tab_active').dataset.id;
